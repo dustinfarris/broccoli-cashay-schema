@@ -3,6 +3,13 @@
 Convert a server graphql schema into a client-safe schema to use with [Cashay][].
 
 
+## Installation
+
+```
+npm i --save broccoli-cashay-schema
+```
+
+
 ## Quick Start
 
 Create a server schema builder function that accepts graphql as its only argument, e.g.:
