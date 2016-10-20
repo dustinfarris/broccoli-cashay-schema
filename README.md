@@ -5,9 +5,7 @@ Convert a server graphql schema into a client-safe schema to use with [Cashay][]
 
 ## Quick Start
 
-Create a server schema builder function that accepts graphql as its only argument.
-
-Example:
+Create a server schema builder function that accepts graphql as its only argument, e.g.:
 
 ```js
 // server/schema-builder.js
@@ -41,6 +39,8 @@ path that you specify.
 
 
 ## Usage
+
+Note: You must bring your own graphql
 
 ```js
 var cashaySchema = require('broccoli-cashay-schema');
