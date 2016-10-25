@@ -3,6 +3,9 @@
 
 ## Master
 
+
+## 0.2.0
+
 - [#1](https://github.com/dustinfarris/broccoli-cashay-schema/pull/1)
   Rebuild schema when files change
   [@dustinfarris](https://github.com/dustinfarris)
