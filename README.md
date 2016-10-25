@@ -56,7 +56,10 @@ var graphql = require('graphql');
 var schemaBuilderPath = 'server/schema-builder.js'
 var clientSafeOutputPath = 'client/schema.js'
 
-var node = cashaySchema(graphql, schemaBuilderPath, clientSafeOutputPath);
+// Pass a watchNode if you want the schema to be recreated when files change
+var options = { watchNode: myAppTree };
+
+var node = cashaySchema(graphql, schemaBuilderPath, clientSafeOutputPath, options);
 ```
 
 
