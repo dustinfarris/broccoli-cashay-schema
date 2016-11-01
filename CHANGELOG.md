@@ -3,6 +3,10 @@
 
 ## Master
 
+- [#7](https://github.com/dustinfarris/broccoli-cashay-schema/pull/7)
+  Add babel-core to dependencies
+  [@dustinfarris](https://github.com/dustinfarris)
+
 
 ## 0.2.2
 
