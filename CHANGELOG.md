@@ -3,6 +3,9 @@
 
 ## Master
 
+
+## 0.2.1
+
 - [#3](https://github.com/dustinfarris/broccoli-cashay-schema/pull/3)
   Add mkdirp to dependencies
   [@dustinfarris](https://github.com/dustinfarris)
