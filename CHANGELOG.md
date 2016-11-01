@@ -3,6 +3,10 @@
 
 ## Master
 
+- [#4](https://github.com/dustinfarris/broccoli-cashay-schema/pull/4)
+  Add babel-runtime to dependencies
+  [@dustinfarris](https://github.com/dustinfarris)
+
 
 ## 0.2.1
 
