@@ -3,7 +3,7 @@ var path = require('path');
 var Plugin = require('broccoli-plugin');
 var mkdirp = require('mkdirp');
 var RSVP = require('rsvp');
-var { transformSchema } = require('cashay');
+var transformSchema = require('cashay').transformSchema;
 
 module.exports = CashaySchema;
 
