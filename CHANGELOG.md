@@ -3,6 +3,10 @@
 
 ## Master
 
+- [#8](https://github.com/dustinfarris/broccoli-cashay-schema/pull/8)
+  Do not use destructure syntax
+  [@dustinfarris](https://github.com/dustinfarris)
+
 
 ## 0.2.3
 
