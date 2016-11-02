@@ -1,6 +1,6 @@
 {
   "name": "broccoli-cashay-schema",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Generate a client-safe GraphQL schema for Cashay",
   "main": "index.js",
   "scripts": {
