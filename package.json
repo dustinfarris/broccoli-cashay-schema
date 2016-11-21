@@ -23,9 +23,8 @@
     "babel-core": "^6.18.0",
     "babel-preset-es2015": "^6.14.0",
     "babel-register": "^6.14.0",
-    "babel-runtime": "^6.18.0",
     "broccoli-plugin": "^1.2.2",
-    "cashay": "^0.20.7",
+    "cashay": "^0.22.0",
     "mkdirp": "^0.5.1",
     "rsvp": "^3.3.2"
   }
