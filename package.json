@@ -4,7 +4,7 @@
   "description": "Generate a client-safe GraphQL schema for Cashay",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/eslint index.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
     "cashay": "^0.22.0",
     "mkdirp": "^0.5.1",
     "rsvp": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.10.2"
   }
 }
