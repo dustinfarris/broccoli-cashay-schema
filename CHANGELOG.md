@@ -3,6 +3,10 @@
 
 ## Master
 
+- [#10](https://github.com/dustinfarris/broccoli-cashay-schema/pull/10)
+  Drop babel-runtime
+  [@dustinfarris](https://github.com/dustinfarris)
+
 
 ## 0.2.4
 
