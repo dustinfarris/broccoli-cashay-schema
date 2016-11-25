@@ -50,16 +50,32 @@ path that you specify.
 Note: You must bring your own graphql
 
 ```js
-var cashaySchema = require('broccoli-cashay-schema');
+var cashaySchemaGenerator = require('broccoli-cashay-schema');
 var graphql = require('graphql');
 
-var schemaBuilderPath = 'server/schema-builder.js'
-var clientSafeOutputPath = 'client/schema.js'
+// The plugin will look for a schema.js file in the node you provide
+//   You can override with the option `serverSchemaPath`
+var node = cashaySchemaGenerator(inputNode, {
+  graphql: graphql,
+  clientSchemaPath: 'client/schema.js'
+});
+```
 
-// Pass a watchNode if you want the schema to be recreated when files change
-var options = { watchNode: myAppTree };
 
-var node = cashaySchema(graphql, schemaBuilderPath, clientSafeOutputPath, options);
+## ES6 Syntax
+
+If you are (likely) using ES6 (ECMAScript 2015), you will need to transpile the schema
+file before passing it to broccoli-cashay-schema.
+
+This can be done easily with [broccoli-babel-transpiler](https://github.com/babel/broccoli-babel-transpiler):
+
+```js
+var esTranspiler = require('broccoli-babel-transpiler');
+
+var node = cashaySchema(esTranspiler(inputNode), {
+  graphql: graphql,
+  clientSchemaPath: 'client/schema.js'
+});
 ```
 
 

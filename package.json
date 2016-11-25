@@ -20,12 +20,10 @@
   },
   "homepage": "https://github.com/dustinfarris/broccoli-cashay-schema#readme",
   "dependencies": {
-    "babel-core": "^6.18.0",
-    "babel-preset-es2015": "^6.14.0",
-    "babel-register": "^6.14.0",
-    "broccoli-plugin": "^1.2.2",
+    "broccoli-filter": "^1.2.4",
     "cashay": "^0.22.0",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
+    "string.prototype.startswith": "^0.2.0"
   },
   "devDependencies": {
     "eslint": "^3.10.2"
