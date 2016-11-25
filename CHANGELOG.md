@@ -3,6 +3,9 @@
 
 ## Master
 
+
+## 0.3.0
+
 - [#14](https://github.com/dustinfarris/broccoli-cashay-schema/pull/14)
   Receive injected cashay
   [@dustinfarris](https://github.com/dustinfarris)
