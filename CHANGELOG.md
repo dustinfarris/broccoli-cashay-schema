@@ -3,6 +3,16 @@
 
 ## Master
 
+- [#14](https://github.com/dustinfarris/broccoli-cashay-schema/pull/14)
+  Receive injected cashay
+  [@dustinfarris](https://github.com/dustinfarris)
+- [#13](https://github.com/dustinfarris/broccoli-cashay-schema/pull/13)
+  Drop babel
+  [@dustinfarris](https://github.com/dustinfarris)
+- [#11](https://github.com/dustinfarris/broccoli-cashay-schema/pull/11)
+  Install ESLint
+  [@dustinfarris](https://github.com/dustinfarris)
+
 
 ## 0.2.5
 
