@@ -4,6 +4,13 @@
 
 Convert a server graphql schema into a client-safe schema to use with [Cashay][].
 
+Compatible with graphql ^0.7.1 and cashay ^0.22.0. (You must install them yourself)
+
+```
+npm i --save graphql
+npm i --save cashay
+```
+
 
 ## Installation
 
@@ -49,15 +56,17 @@ path that you specify.
 
 ## Usage
 
-Note: You must bring your own graphql
+Note: You must bring your own graphql and cashay
 
 ```js
 var cashaySchemaGenerator = require('broccoli-cashay-schema');
+var cashay = require('cashay');
 var graphql = require('graphql');
 
 // The plugin will look for a schema.js file in the node you provide
 //   You can override with the option `serverSchemaPath`
 var node = cashaySchemaGenerator(inputNode, {
+  cashay: cashay,
   graphql: graphql,
   clientSchemaPath: 'client/schema.js'
 });
@@ -75,6 +84,7 @@ This can be done easily with [broccoli-babel-transpiler](https://github.com/babe
 var esTranspiler = require('broccoli-babel-transpiler');
 
 var node = cashaySchemaGenerator(esTranspiler(inputNode), {
+  cashay: cashay,
   graphql: graphql,
   clientSchemaPath: 'client/schema.js'
 });

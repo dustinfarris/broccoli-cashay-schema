@@ -21,11 +21,14 @@
   "homepage": "https://github.com/dustinfarris/broccoli-cashay-schema#readme",
   "dependencies": {
     "broccoli-filter": "^1.2.4",
-    "cashay": "^0.22.0",
     "mkdirp": "^0.5.1",
     "string.prototype.startswith": "^0.2.0"
   },
   "devDependencies": {
     "eslint": "^3.10.2"
+  },
+  "peerDependencies": {
+    "cashay": "^0.22.0",
+    "graphql": "^0.7.1"
   }
 }
