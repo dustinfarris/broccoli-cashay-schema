@@ -1,5 +1,7 @@
 # broccoli-cashay-schema
 
+[![CircleCI](https://circleci.com/gh/dustinfarris/broccoli-cashay-schema.svg?style=svg)](https://circleci.com/gh/dustinfarris/broccoli-cashay-schema)
+
 Convert a server graphql schema into a client-safe schema to use with [Cashay][].
 
 
