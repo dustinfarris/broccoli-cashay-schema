@@ -72,7 +72,7 @@ This can be done easily with [broccoli-babel-transpiler](https://github.com/babe
 ```js
 var esTranspiler = require('broccoli-babel-transpiler');
 
-var node = cashaySchema(esTranspiler(inputNode), {
+var node = cashaySchemaGenerator(esTranspiler(inputNode), {
   graphql: graphql,
   clientSchemaPath: 'client/schema.js'
 });
