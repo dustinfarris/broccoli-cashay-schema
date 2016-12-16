@@ -1,7 +1,7 @@
 # broccoli-cashay-schema Changelog
 
 
-## Master
+## 0.4.0
 
 - [#17](https://github.com/dustinfarris/broccoli-cashay-schema/pull/17)
   Accept a graphql schema instead of a function
