@@ -4,7 +4,7 @@
 
 Convert a server graphql schema into a client-safe schema to use with [Cashay][].
 
-Compatible with graphql 0.7.2 and cashay ^0.22.1. (You must install them yourself)
+Compatible with graphql 0.7.1 and cashay ^0.22.1. (You must install them yourself)
 
 Note that the version of graphql _must_ match the version used by Cashay.  When Cashay [removes graphql as a dependency](https://github.com/mattkrick/cashay/issues/148), this will no longer be a restriction.
 
