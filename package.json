@@ -4,6 +4,8 @@
   "description": "Generate a client-safe GraphQL schema for Cashay",
   "main": "index.js",
   "scripts": {
+    "postversion": "git push && git push --tags",
+    "preversion": "git checkout master && git pull && npm test",
     "test": "./node_modules/.bin/eslint index.js"
   },
   "repository": {
@@ -13,7 +15,7 @@
   "keywords": [
     "broccoli-plugin"
   ],
-  "author": "Dustin Farris",
+  "author": "Dustin Farris <dustin@farris.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dustinfarris/broccoli-cashay-schema/issues"
