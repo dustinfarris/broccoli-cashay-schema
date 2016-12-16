@@ -3,6 +3,13 @@
 
 ## Master
 
+- [#17](https://github.com/dustinfarris/broccoli-cashay-schema/pull/17)
+  Accept a graphql schema instead of a function
+  [@dustinfarris](https://github.com/dustinfarris)
+- [#16](https://github.com/dustinfarris/broccoli-cashay-schema/pull/16)
+  Adjust graphql peerDependency
+  [@dustinfarris](https://github.com/dustinfarris)
+
 
 ## 0.3.0
 
