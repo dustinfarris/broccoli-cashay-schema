@@ -61,7 +61,7 @@ CashaySchema.prototype.processFile = function(srcDir, destDir, relativePath) {
 
   // Load the server schema
   var fullPath = path.join(srcDir, relativePath);
-  var rootSchema = require(fullPath)(this.graphql);
+  var rootSchema = require(fullPath);
 
   // Generate a client-safe schema
   return this.cashay.transformSchema(rootSchema, this.graphql.graphql).

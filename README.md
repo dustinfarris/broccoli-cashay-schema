@@ -4,7 +4,7 @@
 
 Convert a server graphql schema into a client-safe schema to use with [Cashay][].
 
-Compatible with graphql ^0.7.1 and cashay ^0.22.0. (You must install them yourself)
+Compatible with graphql ^0.8.2 and cashay ^0.22.1. (You must install them yourself)
 
 ```
 npm i --save graphql
@@ -21,37 +21,33 @@ npm i --save broccoli-cashay-schema
 
 ## Quick Start
 
-Create a server schema builder function that accepts graphql as its only argument, e.g.:
+Create a server schema, e.g.:
 
 ```js
 // server/schema-builder.js
 
-export default function(graphql) {
-  const {
-    GraphQLSchema,
-    GraphQLObjectType,
-    GraphQLString
-  } = graphql;
-  const query = new GraphQLObjectType({
-    name: 'RootQueryType',
-    fields: {
-      hello: {
-        type: GraphQLString,
-        resolve() {
-          return 'world';
-        }
+import {
+  GraphQLSchema,
+  GraphQLObjectType,
+  GraphQLString
+} from 'graphql';
+
+const query = new GraphQLObjectType({
+  name: 'RootQueryType',
+  fields: {
+    hello: {
+      type: GraphQLString,
+      resolve() {
+        return 'world';
       }
     }
-  });
-  return new GraphQLSchema({
-    query
-  });
-};
+  }
+});
+
+export default new GraphQLSchema({ query });
 ```
 
-broccoli-cashay-schema will execute the function in this file, and then convert the
-resulting schema into a new client-safe schema, and then write it back out to a
-path that you specify.
+broccoli-cashay-schema will convert the schema into a new client-safe schema, and then write it back out to a path that you specify.
 
 
 ## Usage
